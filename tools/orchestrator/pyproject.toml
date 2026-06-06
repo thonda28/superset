@@ -1,0 +1,19 @@
+[project]
+name = "orchestrator"
+version = "0.1.0"
+description = "Devin-powered OSV vulnerability remediation orchestrator for Apache Superset"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "PyGithub>=2.1.1",
+]
+
+[project.scripts]
+orchestrator = "orchestrator.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
