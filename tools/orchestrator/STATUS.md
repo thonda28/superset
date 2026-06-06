@@ -1,6 +1,6 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-06 15:58 UTC_
+_Generated at 2026-06-06 17:04 UTC_
 
 ## Summary
 
@@ -11,7 +11,7 @@ _Generated at 2026-06-06 15:58 UTC_
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
-| [#22](https://github.com/thonda28/superset/issues/22) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#22](https://github.com/thonda28/superset/issues/22) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | `/home/runner/work/superset/superset/requirements/base.txt` | [link](https://app.devin.ai/sessions/2ac086a5e91d452dba881a7e0e30e59d) | [#24](https://github.com/thonda28/superset/pull/24) (open) |
 | [#19](https://github.com/thonda28/superset/issues/19) | `starlette 0.49.1` | CVE-2026-48710 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#18](https://github.com/thonda28/superset/issues/18) | `starlette 0.49.1` | GHSA-86qp-5c8j-p5mr | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#17](https://github.com/thonda28/superset/issues/17) | `pytest 7.4.4` | CVE-2025-71176 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
