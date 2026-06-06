@@ -65,13 +65,19 @@ class DevinClient:
         resp.raise_for_status()
 
     def get_session(self, session_id: str) -> Session:
-        resp = requests.get(
-            self._sessions_url(session_id),
-            headers=self._headers(),
-            timeout=60,
-        )
-        resp.raise_for_status()
-        return _to_session(resp.json())
+        """Fetch session state, retrying transient 5xx errors with backoff."""
+        for attempt in range(5):
+            resp = requests.get(
+                self._sessions_url(session_id),
+                headers=self._headers(),
+                timeout=60,
+            )
+            if resp.ok:
+                return _to_session(resp.json())
+            if resp.status_code < 500 or attempt == 4:
+                resp.raise_for_status()
+            time.sleep(2 ** attempt)
+        raise RuntimeError("unreachable")
 
     def wait_for_completion(
         self,
