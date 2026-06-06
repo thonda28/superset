@@ -50,4 +50,4 @@ This repository uses a two-layer Python dependency model. **Do NOT edit
   - `requirements/base.txt`
   - `requirements/development.txt`
   - `requirements/translations.txt`
-- Command: `osv-scanner scan --lockfile=requirements.txt:<file> --no-resolve --format=json`
+- Command: `osv-scanner --lockfile=requirements.txt:<file> --no-resolve --format=json`
