@@ -1,16 +1,17 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-06 15:06 UTC_
+_Generated at 2026-06-06 15:17 UTC_
 
 ## Summary
 
 - Open findings: **18**
-- Remediated (closed): **0**
+- Remediated (closed): **1**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#20](https://github.com/thonda28/superset/issues/20) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#19](https://github.com/thonda28/superset/issues/19) | `starlette 0.49.1` | CVE-2026-48710 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#18](https://github.com/thonda28/superset/issues/18) | `starlette 0.49.1` | GHSA-86qp-5c8j-p5mr | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#17](https://github.com/thonda28/superset/issues/17) | `pytest 7.4.4` | CVE-2025-71176 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
@@ -28,4 +29,9 @@ _Generated at 2026-06-06 15:06 UTC_
 | [#5](https://github.com/thonda28/superset/issues/5) | `pyarrow 20.0.0` | GHSA-rgxp-2hwp-jwgg | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#4](https://github.com/thonda28/superset/issues/4) | `paramiko 3.5.1` | CVE-2026-44405 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#3](https://github.com/thonda28/superset/issues/3) | `flask 2.3.3` | CVE-2026-27205 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
-| [#1](https://github.com/thonda28/superset/issues/1) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | `requirements/base.txt` | — | — |
+
+## Remediated
+
+| Issue | Package | Advisory | PR | Closed |
+|---|---|---|---|---|
+| [#1](https://github.com/thonda28/superset/issues/1) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | — | 2026-06-06 |
