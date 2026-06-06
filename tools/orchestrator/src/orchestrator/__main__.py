@@ -38,7 +38,12 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Issue number to remediate",
     )
 
-    sub.add_parser("status", help="Regenerate STATUS.md")
+    status = sub.add_parser("status", help="Regenerate STATUS.md")
+    status.add_argument(
+        "--output",
+        default=None,
+        help="Output path (default: ./tools/orchestrator/STATUS.md)",
+    )
 
     return parser
 
@@ -57,7 +62,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "status":
         from orchestrator.status import run as status_run
 
-        return status_run()
+        return status_run(output=args.output)
     return 1
 
 

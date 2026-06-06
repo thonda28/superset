@@ -14,7 +14,7 @@ _PR_URL_PATTERN = re.compile(r"https?://github\.com/[^/\s]+/[^/\s]+/pull/(\d+)")
 _SESSION_URL_PATTERN = re.compile(r"https?://app\.devin\.ai/sessions/[A-Za-z0-9_-]+")
 _TITLE_PREFIX = "[OSV]"
 
-STATUS_PATH = Path(__file__).resolve().parents[2] / "STATUS.md"
+_DEFAULT_OUTPUT = Path("tools") / "orchestrator" / "STATUS.md"
 
 
 @dataclass
@@ -32,14 +32,17 @@ class IssueSnapshot:
     session_url: str | None
 
 
-def run() -> int:
+def run(*, output: str | None = None) -> int:
     from orchestrator.github import GithubClient
     from orchestrator.remediate import parse_finding_from_issue_body
 
     gh = GithubClient.from_env()
     snapshots = list(_collect_snapshots(gh, parse_finding_from_issue_body))
-    STATUS_PATH.write_text(render(snapshots), encoding="utf-8")
-    print(f"status: wrote {STATUS_PATH} ({len(snapshots)} OSV issue(s))")
+
+    output_path = (Path(output) if output else Path.cwd() / _DEFAULT_OUTPUT).resolve()
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(render(snapshots), encoding="utf-8")
+    print(f"status: wrote {output_path} ({len(snapshots)} OSV issue(s))")
     return 0
 
 
