@@ -19,11 +19,11 @@ PYPI_LOCKFILES = (
 
 def run(*, target: str, dry_run: bool) -> int:
     findings = _dedupe_by_advisory_id(scan_pypi(Path(target)))
-    if not findings:
-        print("scan: no PyPI vulnerabilities found")
-        return 0
 
-    print(f"scan: detected {len(findings)} PyPI vulnerabilit{'y' if len(findings) == 1 else 'ies'}")
+    if findings:
+        print(f"scan: detected {len(findings)} PyPI vulnerabilit{'y' if len(findings) == 1 else 'ies'}")
+    else:
+        print("scan: no PyPI vulnerabilities found")
 
     if dry_run:
         for finding in findings:
@@ -33,16 +33,20 @@ def run(*, target: str, dry_run: bool) -> int:
     from orchestrator.github import GithubClient
 
     gh = GithubClient.from_env()
-    existing = gh.existing_osv_advisory_ids()
-    new_findings = [f for f in findings if f.advisory_id not in existing]
-    print(f"scan: {len(new_findings)} new, {len(findings) - len(new_findings)} already filed")
 
-    for finding in new_findings:
-        issue = gh.create_finding_issue(finding)
-        print(f"scan: created issue #{issue.number} for {finding.advisory_id} ({finding.package} {finding.current_version})")
-        gh.dispatch_remediate(issue.number)
-        print(f"scan: dispatched osv-remediate.yml for issue #{issue.number}")
+    if findings:
+        existing = gh.existing_osv_advisory_ids()
+        new_findings = [f for f in findings if f.advisory_id not in existing]
+        print(f"scan: {len(new_findings)} new, {len(findings) - len(new_findings)} already filed")
 
+        for finding in new_findings:
+            issue = gh.create_finding_issue(finding)
+            print(f"scan: created issue #{issue.number} for {finding.advisory_id} ({finding.package} {finding.current_version})")
+            gh.dispatch_remediate(issue.number)
+            print(f"scan: dispatched osv-remediate.yml for issue #{issue.number}")
+
+    gh.dispatch_status()
+    print("scan: dispatched osv-status.yml")
     return 0
 
 

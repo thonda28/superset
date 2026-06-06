@@ -15,6 +15,7 @@ from orchestrator.models import Finding
 
 OSV_LABELS = ["osv-finding", "auto-remediation", "security", "ecosystem:pypi"]
 REMEDIATE_WORKFLOW = "osv-remediate.yml"
+STATUS_WORKFLOW = "osv-status.yml"
 
 _TITLE_PREFIX = "[OSV][PyPI]"
 _ADVISORY_ID_PATTERN = re.compile(r'"advisory_id"\s*:\s*"([^"]+)"')
@@ -62,6 +63,16 @@ class GithubClient:
             ref=self.repo.default_branch,
             inputs={"issue_number": str(issue_number)},
         )
+
+    def dispatch_status(self) -> None:
+        """Trigger osv-status.yml to regenerate STATUS.md.
+
+        Replaces the previous ``workflow_run`` chain, which silently dropped
+        runs whose upstream was started via ``GITHUB_TOKEN`` (the same guard
+        that broke ``issues.opened``). ``workflow_dispatch`` is exempt.
+        """
+        workflow = self.repo.get_workflow(STATUS_WORKFLOW)
+        workflow.create_dispatch(ref=self.repo.default_branch)
 
 
 def _build_title(finding: Finding) -> str:

@@ -1,9 +1,6 @@
 name: OSV status
 
 on:
-  workflow_run:
-    workflows: ["OSV scan", "OSV remediate"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:

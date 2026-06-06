@@ -75,6 +75,8 @@ def run(*, issue_number: int) -> int:
             f"Devin opened a remediation PR: {pr_url}\n\nSession: {final.url}"
         )
         print(f"remediate: PR opened: {pr_url}")
+        gh.dispatch_status()
+        print("remediate: dispatched osv-status.yml")
         return 0
 
     issue.create_comment(
@@ -82,6 +84,8 @@ def run(*, issue_number: int) -> int:
         f"Session: {final.url} (status: {final.status})"
     )
     print("remediate: no PR produced", file=sys.stderr)
+    gh.dispatch_status()
+    print("remediate: dispatched osv-status.yml")
     return 4
 
 
