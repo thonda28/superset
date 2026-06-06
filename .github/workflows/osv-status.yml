@@ -1,0 +1,42 @@
+name: OSV status
+
+on:
+  workflow_run:
+    workflows: ["OSV scan", "OSV remediate"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install orchestrator
+        working-directory: tools/orchestrator
+        run: pip install .
+
+      - name: Generate STATUS.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: orchestrator status
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain tools/orchestrator/STATUS.md)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add tools/orchestrator/STATUS.md
+            git commit -m "chore(orchestrator): update STATUS.md"
+            git push
+          fi
