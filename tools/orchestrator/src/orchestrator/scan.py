@@ -40,6 +40,8 @@ def run(*, target: str, dry_run: bool) -> int:
     for finding in new_findings:
         issue = gh.create_finding_issue(finding)
         print(f"scan: created issue #{issue.number} for {finding.advisory_id} ({finding.package} {finding.current_version})")
+        gh.dispatch_remediate(issue.number)
+        print(f"scan: dispatched osv-remediate.yml for issue #{issue.number}")
 
     return 0
 

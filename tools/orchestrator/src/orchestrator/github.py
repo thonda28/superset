@@ -14,6 +14,7 @@ from orchestrator.models import Finding
 
 
 OSV_LABELS = ["osv-finding", "auto-remediation", "security", "ecosystem:pypi"]
+REMEDIATE_WORKFLOW = "osv-remediate.yml"
 
 _TITLE_PREFIX = "[OSV][PyPI]"
 _ADVISORY_ID_PATTERN = re.compile(r'"advisory_id"\s*:\s*"([^"]+)"')
@@ -49,6 +50,18 @@ class GithubClient:
         title = _build_title(finding)
         body = _build_body(finding)
         return self.repo.create_issue(title=title, body=body, labels=OSV_LABELS)
+
+    def dispatch_remediate(self, issue_number: int) -> None:
+        """Trigger osv-remediate.yml for ``issue_number``.
+
+        Needed because Issues created with ``GITHUB_TOKEN`` do not fire
+        ``issues.opened``; ``workflow_dispatch`` is exempt from that guard.
+        """
+        workflow = self.repo.get_workflow(REMEDIATE_WORKFLOW)
+        workflow.create_dispatch(
+            ref=self.repo.default_branch,
+            inputs={"issue_number": str(issue_number)},
+        )
 
 
 def _build_title(finding: Finding) -> str:
