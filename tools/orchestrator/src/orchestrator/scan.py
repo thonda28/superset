@@ -108,14 +108,7 @@ def _extract_fixed_versions(vuln: dict) -> list[str]:
 
 
 def _dedupe_by_advisory_id(findings: list[Finding]) -> list[Finding]:
-    """Collapse findings that share the same ``advisory_id``.
-
-    A single vulnerability often appears in multiple lockfiles
-    (e.g. ``requirements/base.txt`` and ``requirements/development.txt``).
-    One Issue per advisory is enough: Devin updates the source constraint
-    in ``pyproject.toml`` and ``./scripts/uv-pip-compile.sh`` regenerates
-    every affected lockfile.
-    """
+    """Keep one Finding per advisory_id; later duplicates are dropped."""
     seen: set[str] = set()
     deduped: list[Finding] = []
     for finding in findings:

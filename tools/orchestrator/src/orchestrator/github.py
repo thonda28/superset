@@ -51,21 +51,8 @@ class GithubClient:
         return self.repo.create_issue(title=title, body=body, labels=OSV_LABELS)
 
 
-def _preferred_alias(finding: Finding) -> str:
-    """Pick the most human-recognisable identifier for titles and AC.
-
-    Order of preference: GHSA > CVE > primary advisory id.
-    """
-    for prefix in ("GHSA-", "CVE-"):
-        for alias in finding.aliases:
-            if alias.startswith(prefix):
-                return alias
-    return finding.advisory_id
-
-
 def _build_title(finding: Finding) -> str:
-    alias = _preferred_alias(finding)
-    return f"{_TITLE_PREFIX} {finding.package} {finding.current_version} vulnerable to {alias}"
+    return f"{_TITLE_PREFIX} {finding.package} {finding.current_version} vulnerable to {finding.preferred_alias}"
 
 
 def _build_body(finding: Finding) -> str:
@@ -86,7 +73,7 @@ def _build_body(finding: Finding) -> str:
     return _ISSUE_BODY_TEMPLATE.format(
         finding_json=finding_json,
         package=finding.package,
-        preferred_alias=_preferred_alias(finding),
+        preferred_alias=finding.preferred_alias,
         source_manifest=finding.source_manifest,
     )
 

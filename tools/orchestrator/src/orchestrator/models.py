@@ -21,3 +21,12 @@ class Finding:
     source_manifest: str
     severity: str | None = None
     summary: str = ""
+
+    @property
+    def preferred_alias(self) -> str:
+        """Most human-recognisable identifier: GHSA > CVE > primary advisory id."""
+        for prefix in ("GHSA-", "CVE-"):
+            for alias in self.aliases:
+                if alias.startswith(prefix):
+                    return alias
+        return self.advisory_id
