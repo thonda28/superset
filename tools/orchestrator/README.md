@@ -58,7 +58,40 @@ All three commands (`scan`, `remediate`, `status`) run automatically:
 
 For ad-hoc runs (re-scanning, replaying a remediation, regenerating the dashboard), each workflow exposes `workflow_dispatch` — use the **Run workflow** button on the Actions tab. `osv-remediate.yml` takes the issue number as an input.
 
-A `Dockerfile` is provided for self-contained execution off-CI (debugging, alternative deployment targets); it bundles `osv-scanner` and exposes the same CLI.
+## Running locally with Docker
+
+The same CLI used in CI is packaged in `tools/orchestrator/Dockerfile`, which bundles `osv-scanner` and the `orchestrator` entrypoint. Reviewers can exercise it off-CI without installing Python or Go locally.
+
+```bash
+# Build (from repo root)
+docker build -t superset-orchestrator tools/orchestrator
+
+# 1. Scan the repo's requirements/*.txt and open Issues for new findings.
+#    Mount the repo so osv-scanner can read the lockfiles.
+docker run --rm \
+  -e GITHUB_TOKEN=$GITHUB_TOKEN \
+  -e GITHUB_REPOSITORY=<owner>/<repo> \
+  -v "$PWD":/workspace -w /workspace \
+  superset-orchestrator scan
+
+# 2. Remediate a specific Issue: opens a Devin session, polls until a PR appears,
+#    comments the PR URL back on the Issue.
+docker run --rm \
+  -e GITHUB_TOKEN=$GITHUB_TOKEN \
+  -e GITHUB_REPOSITORY=<owner>/<repo> \
+  -e DEVIN_API_KEY=$DEVIN_API_KEY \
+  -e DEVIN_ORG_ID=$DEVIN_ORG_ID \
+  superset-orchestrator remediate --issue <issue-number>
+
+# 3. Regenerate STATUS.md from current Issue/PR state.
+docker run --rm \
+  -e GITHUB_TOKEN=$GITHUB_TOKEN \
+  -e GITHUB_REPOSITORY=<owner>/<repo> \
+  -v "$PWD":/workspace -w /workspace \
+  superset-orchestrator status
+```
+
+`GITHUB_TOKEN` needs `repo` scope (Issues + PRs read/write, workflow dispatch). `DEVIN_API_KEY` / `DEVIN_ORG_ID` are only required for `remediate`.
 
 ## Live status
 
