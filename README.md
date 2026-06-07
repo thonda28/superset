@@ -19,6 +19,8 @@ under the License.
 
 # Superset
 
+> **Fork note (Devin take-home).** This fork hosts a Devin-driven OSV remediation orchestrator alongside Apache Superset. The automation lives in [`tools/orchestrator/`](./tools/orchestrator/); see its [README](./tools/orchestrator/README.md) for architecture, setup, and the live [STATUS.md](./tools/orchestrator/STATUS.md) dashboard. Remediated issues and PRs are visible in this same repository for cross-reference.
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/license/apache-2-0)
 [![Latest Release on Github](https://img.shields.io/github/v/release/apache/superset?sort=semver)](https://github.com/apache/superset/releases/latest)
 [![Build Status](https://github.com/apache/superset/actions/workflows/superset-python-unittest.yml/badge.svg)](https://github.com/apache/superset/actions)
