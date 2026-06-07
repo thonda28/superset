@@ -1,6 +1,6 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-07 02:39 UTC_
+_Generated at 2026-06-07 02:53 UTC_
 
 ## Summary
 
@@ -22,7 +22,7 @@ _Generated at 2026-06-07 02:39 UTC_
 | [#15](https://github.com/thonda28/superset/issues/15) | `pip 25.1.1` | CVE-2026-1703 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#14](https://github.com/thonda28/superset/issues/14) | `pip 25.1.1` | CVE-2026-3219 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#13](https://github.com/thonda28/superset/issues/13) | `pip 25.1.1` | CVE-2025-8869 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
-| [#12](https://github.com/thonda28/superset/issues/12) | `pip 25.1.1` | CVE-2026-8643 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#12](https://github.com/thonda28/superset/issues/12) | `pip 25.1.1` | CVE-2026-8643 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/eb6efca76f734da7ba9591b0ff4c2e9b) | [#27](https://github.com/thonda28/superset/pull/27) (open) |
 | [#11](https://github.com/thonda28/superset/issues/11) | `jaraco-context 6.0.1` | CVE-2026-23949 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/f61d6d17e67441e4a9c6427e471978f1) | [#25](https://github.com/thonda28/superset/pull/25) (open) |
 | [#10](https://github.com/thonda28/superset/issues/10) | `pyjwt 2.12.0` | GHSA-w7vc-732c-9m39 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#9](https://github.com/thonda28/superset/issues/9) | `pyjwt 2.12.0` | GHSA-fhv5-28vv-h8m8 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
