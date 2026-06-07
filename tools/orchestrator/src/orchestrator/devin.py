@@ -107,7 +107,7 @@ class DevinClient:
 
     def _sessions_url(self, session_id: str | None = None) -> str:
         base = f"{self.base_url}/organizations/{self.org_id}/sessions"
-        return f"{base}/{session_id}" if session_id else base
+        return f"{base}/{_to_devin_id(session_id)}" if session_id else base
 
 
 def _to_session(payload: dict) -> Session:
@@ -122,3 +122,7 @@ def _to_session(payload: dict) -> Session:
         tags=list(payload.get("tags") or []),
         raw=payload,
     )
+
+
+def _to_devin_id(session_id: str) -> str:
+    return session_id if session_id.startswith("devin-") else f"devin-{session_id}"
