@@ -89,3 +89,6 @@ CLAUDE.md
 CURSOR.md
 GEMINI.md
 GPT.md
+
+# self-contained demo tool, not part of the Superset codebase proper
+orchestrator/*
