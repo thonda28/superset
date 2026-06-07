@@ -3,8 +3,9 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from statistics import median
 from typing import Iterator
 
 from orchestrator.models import Finding
@@ -112,16 +113,17 @@ def render(snapshots: list[IssueSnapshot]) -> str:
         reverse=True,
     )
 
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc)
     lines = [
         "# OSV Remediation Status",
         "",
-        f"_Generated at {now}_",
+        f"_Generated at {now.strftime('%Y-%m-%d %H:%M UTC')}_",
         "",
         "## Summary",
         "",
         f"- Open findings: **{len(open_issues)}**",
         f"- Remediated (closed): **{len(closed_issues)}**",
+        *_metric_lines(open_issues, closed_issues, now),
         "",
     ]
 
@@ -160,6 +162,57 @@ def _open_row(s: IssueSnapshot) -> str:
     session = f"[link]({s.session_url})" if s.session_url else "—"
     pr = f"[#{s.pr_number}]({s.pr_url}) ({s.pr_state})" if s.pr_number else "—"
     return f"| [#{s.number}]({s.url}) | {pkg} | {advisory} | {source} | {session} | {pr} |"
+
+
+def _metric_lines(
+    open_issues: list[IssueSnapshot],
+    closed_issues: list[IssueSnapshot],
+    now: datetime,
+) -> list[str]:
+    """Throughput and time-to-remediation metrics for the Summary section.
+
+    Lets a reviewer answer "is the orchestrator actually moving work?" without
+    counting table rows by hand.
+    """
+    total = len(open_issues) + len(closed_issues)
+    week_ago = now - timedelta(days=7)
+    opened_7d = sum(1 for s in open_issues + closed_issues if s.created_at >= week_ago)
+    closed_7d = sum(
+        1 for s in closed_issues if s.closed_at is not None and s.closed_at >= week_ago
+    )
+
+    out: list[str] = []
+    if total:
+        rate = len(closed_issues) / total * 100
+        out.append(f"- Remediation rate: **{len(closed_issues)}/{total}** ({rate:.0f}%)")
+
+    durations = [
+        s.closed_at - s.created_at
+        for s in closed_issues
+        if s.closed_at is not None
+    ]
+    if durations:
+        out.append(
+            f"- Median time-to-remediation: **{_humanize(median(durations))}** "
+            f"_(n={len(durations)})_"
+        )
+
+    out.append(f"- Last 7 days: **+{opened_7d} opened, {closed_7d} remediated**")
+    return out
+
+
+def _humanize(delta: timedelta) -> str:
+    total_seconds = int(delta.total_seconds())
+    if total_seconds < 0:
+        total_seconds = 0
+    days, rem = divmod(total_seconds, 86400)
+    hours, rem = divmod(rem, 3600)
+    minutes, _ = divmod(rem, 60)
+    if days:
+        return f"{days}d {hours}h"
+    if hours:
+        return f"{hours}h {minutes}m"
+    return f"{minutes}m"
 
 
 def _closed_row(s: IssueSnapshot) -> str:
