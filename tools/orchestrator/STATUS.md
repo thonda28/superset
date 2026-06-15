@@ -1,19 +1,31 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-14 19:08 UTC_
+_Generated at 2026-06-15 20:48 UTC_
 
 ## Summary
 
-- Open findings: **18**
+- Open findings: **30**
 - Remediated (closed): **2**
-- Remediation rate: **2/20** (10%)
+- Remediation rate: **2/32** (6%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+0 opened, 0 remediated**
+- Last 7 days: **+12 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#39](https://github.com/thonda28/superset/issues/39) | `starlette 0.49.1` | CVE-2026-48817 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#38](https://github.com/thonda28/superset/issues/38) | `starlette 0.49.1` | CVE-2026-48818 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#37](https://github.com/thonda28/superset/issues/37) | `python-multipart 0.0.29` | CVE-2026-53537 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#36](https://github.com/thonda28/superset/issues/36) | `python-multipart 0.0.29` | CVE-2026-53540 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#35](https://github.com/thonda28/superset/issues/35) | `python-multipart 0.0.29` | CVE-2026-53538 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#34](https://github.com/thonda28/superset/issues/34) | `python-multipart 0.0.29` | CVE-2026-53539 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#33](https://github.com/thonda28/superset/issues/33) | `pyjwt 2.12.0` | CVE-2026-48526 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#32](https://github.com/thonda28/superset/issues/32) | `pyjwt 2.12.0` | CVE-2026-48525 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#31](https://github.com/thonda28/superset/issues/31) | `pyjwt 2.12.0` | CVE-2026-48523 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#30](https://github.com/thonda28/superset/issues/30) | `pyjwt 2.12.0` | CVE-2026-48524 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#29](https://github.com/thonda28/superset/issues/29) | `pyjwt 2.12.0` | CVE-2026-48522 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#28](https://github.com/thonda28/superset/issues/28) | `cryptography 46.0.7` | GHSA-537c-gmf6-5ccf | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#22](https://github.com/thonda28/superset/issues/22) | `pyjwt 2.12.0` | GHSA-xgmm-8j9v-c9wx | `/home/runner/work/superset/superset/requirements/base.txt` | [link](https://app.devin.ai/sessions/2ac086a5e91d452dba881a7e0e30e59d) | [#24](https://github.com/thonda28/superset/pull/24) (open) |
 | [#19](https://github.com/thonda28/superset/issues/19) | `starlette 0.49.1` | CVE-2026-48710 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#18](https://github.com/thonda28/superset/issues/18) | `starlette 0.49.1` | GHSA-86qp-5c8j-p5mr | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
