@@ -1,6 +1,6 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-16 20:48 UTC_
+_Generated at 2026-06-16 20:58 UTC_
 
 ## Summary
 
@@ -14,7 +14,7 @@ _Generated at 2026-06-16 20:48 UTC_
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
-| [#53](https://github.com/thonda28/superset/issues/53) | `starlette 0.49.1` | CVE-2026-54282 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#53](https://github.com/thonda28/superset/issues/53) | `starlette 0.49.1` | CVE-2026-54282 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/44c4e3f1e67c46b782a9c399fd7b720f) | [#55](https://github.com/thonda28/superset/pull/55) (open) |
 | [#52](https://github.com/thonda28/superset/issues/52) | `starlette 0.49.1` | CVE-2026-54283 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/edd8e36f9dd44f57b2f92de46dcd6564) | [#54](https://github.com/thonda28/superset/pull/54) (open) |
 | [#39](https://github.com/thonda28/superset/issues/39) | `starlette 0.49.1` | CVE-2026-48817 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#38](https://github.com/thonda28/superset/issues/38) | `starlette 0.49.1` | CVE-2026-48818 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/e3b83bd97ce84205b0a026631e297f82) | [#42](https://github.com/thonda28/superset/pull/42) (open) |
