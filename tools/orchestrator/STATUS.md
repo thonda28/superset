@@ -1,22 +1,24 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-15 20:56 UTC_
+_Generated at 2026-06-16 20:38 UTC_
 
 ## Summary
 
-- Open findings: **30**
+- Open findings: **32**
 - Remediated (closed): **2**
-- Remediation rate: **2/32** (6%)
+- Remediation rate: **2/34** (6%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+12 opened, 0 remediated**
+- Last 7 days: **+14 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#53](https://github.com/thonda28/superset/issues/53) | `starlette 0.49.1` | CVE-2026-54282 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#52](https://github.com/thonda28/superset/issues/52) | `starlette 0.49.1` | CVE-2026-54283 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#39](https://github.com/thonda28/superset/issues/39) | `starlette 0.49.1` | CVE-2026-48817 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#38](https://github.com/thonda28/superset/issues/38) | `starlette 0.49.1` | CVE-2026-48818 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/e3b83bd97ce84205b0a026631e297f82) | [#42](https://github.com/thonda28/superset/pull/42) (open) |
-| [#37](https://github.com/thonda28/superset/issues/37) | `python-multipart 0.0.29` | CVE-2026-53537 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#37](https://github.com/thonda28/superset/issues/37) | `python-multipart 0.0.29` | CVE-2026-53537 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/ced708748dcc4efc91667f998348b534) | [#45](https://github.com/thonda28/superset/pull/45) (open) |
 | [#36](https://github.com/thonda28/superset/issues/36) | `python-multipart 0.0.29` | CVE-2026-53540 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#35](https://github.com/thonda28/superset/issues/35) | `python-multipart 0.0.29` | CVE-2026-53538 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/665fe1c8e2264c148306cc9736fd612f) | [#44](https://github.com/thonda28/superset/pull/44) (open) |
 | [#34](https://github.com/thonda28/superset/issues/34) | `python-multipart 0.0.29` | CVE-2026-53539 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
