@@ -448,6 +448,7 @@ authorized_licenses = [
     "academic free license (afl)",
     "any-osi",
     "apache license 2.0",
+    "apache-2.0",
     "apache software",
     "apache software, bsd",
     "bsd",
