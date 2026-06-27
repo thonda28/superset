@@ -1,19 +1,21 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-26 19:28 UTC_
+_Generated at 2026-06-27 19:04 UTC_
 
 ## Summary
 
-- Open findings: **33**
+- Open findings: **35**
 - Remediated (closed): **2**
-- Remediation rate: **2/35** (6%)
+- Remediation rate: **2/37** (5%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+1 opened, 0 remediated**
+- Last 7 days: **+3 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#59](https://github.com/thonda28/superset/issues/59) | `starlette 0.49.1` | GHSA-82w8-qh3p-5jfq | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#58](https://github.com/thonda28/superset/issues/58) | `starlette 0.49.1` | GHSA-jp82-jpqv-5vv3 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#56](https://github.com/thonda28/superset/issues/56) | `msgpack 1.0.8` | GHSA-6v7p-g79w-8964 | `/home/runner/work/superset/superset/requirements/base.txt` | [link](https://app.devin.ai/sessions/296c75f289d74b6fbe8693e3022a5cb2) | [#57](https://github.com/thonda28/superset/pull/57) (open) |
 | [#53](https://github.com/thonda28/superset/issues/53) | `starlette 0.49.1` | CVE-2026-54282 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/44c4e3f1e67c46b782a9c399fd7b720f) | [#55](https://github.com/thonda28/superset/pull/55) (open) |
 | [#52](https://github.com/thonda28/superset/issues/52) | `starlette 0.49.1` | CVE-2026-54283 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/edd8e36f9dd44f57b2f92de46dcd6564) | [#54](https://github.com/thonda28/superset/pull/54) (open) |
