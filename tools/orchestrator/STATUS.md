@@ -1,6 +1,6 @@
 # OSV Remediation Status
 
-_Generated at 2026-06-27 19:15 UTC_
+_Generated at 2026-06-27 19:18 UTC_
 
 ## Summary
 
@@ -14,7 +14,7 @@ _Generated at 2026-06-27 19:15 UTC_
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
-| [#59](https://github.com/thonda28/superset/issues/59) | `starlette 0.49.1` | GHSA-82w8-qh3p-5jfq | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#59](https://github.com/thonda28/superset/issues/59) | `starlette 0.49.1` | GHSA-82w8-qh3p-5jfq | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/d54e15a3c51a4be5a3f741df36fdcfff) | [#61](https://github.com/thonda28/superset/pull/61) (open) |
 | [#58](https://github.com/thonda28/superset/issues/58) | `starlette 0.49.1` | GHSA-jp82-jpqv-5vv3 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/bdb7352c4c5c45f78eab9d157693f5ab) | [#60](https://github.com/thonda28/superset/pull/60) (open) |
 | [#56](https://github.com/thonda28/superset/issues/56) | `msgpack 1.0.8` | GHSA-6v7p-g79w-8964 | `/home/runner/work/superset/superset/requirements/base.txt` | [link](https://app.devin.ai/sessions/296c75f289d74b6fbe8693e3022a5cb2) | [#57](https://github.com/thonda28/superset/pull/57) (open) |
 | [#53](https://github.com/thonda28/superset/issues/53) | `starlette 0.49.1` | CVE-2026-54282 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/44c4e3f1e67c46b782a9c399fd7b720f) | [#55](https://github.com/thonda28/superset/pull/55) (open) |
