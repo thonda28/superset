@@ -1,19 +1,23 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-06 19:41 UTC_
+_Generated at 2026-07-07 19:41 UTC_
 
 ## Summary
 
-- Open findings: **35**
+- Open findings: **39**
 - Remediated (closed): **2**
-- Remediation rate: **2/37** (5%)
+- Remediation rate: **2/41** (5%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+0 opened, 0 remediated**
+- Last 7 days: **+4 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#65](https://github.com/thonda28/superset/issues/65) | `pytest 7.4.4` | GHSA-6w46-j5rx-g56g | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#64](https://github.com/thonda28/superset/issues/64) | `pip 25.1.1` | GHSA-6vgw-5pg2-w6jp | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#63](https://github.com/thonda28/superset/issues/63) | `pip 25.1.1` | GHSA-4xh5-x5gv-qwph | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#62](https://github.com/thonda28/superset/issues/62) | `jaraco-context 6.0.1` | GHSA-58pv-8j8x-9vj2 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#59](https://github.com/thonda28/superset/issues/59) | `starlette 0.49.1` | GHSA-82w8-qh3p-5jfq | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/d54e15a3c51a4be5a3f741df36fdcfff) | [#61](https://github.com/thonda28/superset/pull/61) (open) |
 | [#58](https://github.com/thonda28/superset/issues/58) | `starlette 0.49.1` | GHSA-jp82-jpqv-5vv3 | `/home/runner/work/superset/superset/requirements/development.txt` | [link](https://app.devin.ai/sessions/bdb7352c4c5c45f78eab9d157693f5ab) | [#60](https://github.com/thonda28/superset/pull/60) (open) |
 | [#56](https://github.com/thonda28/superset/issues/56) | `msgpack 1.0.8` | GHSA-6v7p-g79w-8964 | `/home/runner/work/superset/superset/requirements/base.txt` | [link](https://app.devin.ai/sessions/296c75f289d74b6fbe8693e3022a5cb2) | [#57](https://github.com/thonda28/superset/pull/57) (open) |
