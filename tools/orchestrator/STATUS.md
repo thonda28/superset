@@ -1,19 +1,34 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-12 18:50 UTC_
+_Generated at 2026-07-13 19:12 UTC_
 
 ## Summary
 
-- Open findings: **40**
+- Open findings: **55**
 - Remediated (closed): **2**
-- Remediation rate: **2/42** (5%)
+- Remediation rate: **2/57** (4%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+5 opened, 0 remediated**
+- Last 7 days: **+20 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#81](https://github.com/thonda28/superset/issues/81) | `starlette 0.49.1` | GHSA-wqp7-x3pw-xc5r | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#80](https://github.com/thonda28/superset/issues/80) | `starlette 0.49.1` | GHSA-x746-7m8f-x49c | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#79](https://github.com/thonda28/superset/issues/79) | `python-multipart 0.0.29` | GHSA-vffw-93wf-4j4q | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#78](https://github.com/thonda28/superset/issues/78) | `python-multipart 0.0.29` | GHSA-v9pg-7xvm-68hf | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#77](https://github.com/thonda28/superset/issues/77) | `python-multipart 0.0.29` | GHSA-6jv3-5f52-599m | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#76](https://github.com/thonda28/superset/issues/76) | `python-multipart 0.0.29` | GHSA-5rvq-cxj2-64vf | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#75](https://github.com/thonda28/superset/issues/75) | `pip 25.1.1` | GHSA-jp4c-xjxw-mgf9 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#74](https://github.com/thonda28/superset/issues/74) | `pip 25.1.1` | GHSA-58qw-9mgm-455v | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#73](https://github.com/thonda28/superset/issues/73) | `pillow 12.2.0` | GHSA-4x4j-2g7c-83w6 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#72](https://github.com/thonda28/superset/issues/72) | `pillow 12.2.0` | GHSA-phj9-mv4w-65pm | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#71](https://github.com/thonda28/superset/issues/71) | `pillow 12.2.0` | GHSA-45hq-cxwh-f6vc | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#70](https://github.com/thonda28/superset/issues/70) | `pillow 12.2.0` | GHSA-5x94-69rx-g8h2 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#69](https://github.com/thonda28/superset/issues/69) | `pillow 12.2.0` | GHSA-8v84-f9pq-wr9x | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#68](https://github.com/thonda28/superset/issues/68) | `paramiko 3.5.1` | GHSA-r374-rxx8-8654 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#67](https://github.com/thonda28/superset/issues/67) | `flask 2.3.3` | GHSA-68rp-wp8r-4726 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#66](https://github.com/thonda28/superset/issues/66) | `pip 25.1.1` | CVE-2026-8643 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#65](https://github.com/thonda28/superset/issues/65) | `pytest 7.4.4` | GHSA-6w46-j5rx-g56g | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#64](https://github.com/thonda28/superset/issues/64) | `pip 25.1.1` | GHSA-6vgw-5pg2-w6jp | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
