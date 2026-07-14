@@ -1,19 +1,20 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-13 19:12 UTC_
+_Generated at 2026-07-14 19:02 UTC_
 
 ## Summary
 
-- Open findings: **55**
+- Open findings: **56**
 - Remediated (closed): **2**
-- Remediation rate: **2/57** (4%)
+- Remediation rate: **2/58** (3%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+20 opened, 0 remediated**
+- Last 7 days: **+21 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#82](https://github.com/thonda28/superset/issues/82) | `setuptools 80.9.0` | GHSA-h35f-9h28-mq5c | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#81](https://github.com/thonda28/superset/issues/81) | `starlette 0.49.1` | GHSA-wqp7-x3pw-xc5r | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#80](https://github.com/thonda28/superset/issues/80) | `starlette 0.49.1` | GHSA-x746-7m8f-x49c | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#79](https://github.com/thonda28/superset/issues/79) | `python-multipart 0.0.29` | GHSA-vffw-93wf-4j4q | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
