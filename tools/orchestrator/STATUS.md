@@ -1,6 +1,6 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-14 19:02 UTC_
+_Generated at 2026-07-15 18:55 UTC_
 
 ## Summary
 
@@ -8,7 +8,7 @@ _Generated at 2026-07-14 19:02 UTC_
 - Remediated (closed): **2**
 - Remediation rate: **2/58** (3%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+21 opened, 0 remediated**
+- Last 7 days: **+17 opened, 0 remediated**
 
 ## Open Findings
 
