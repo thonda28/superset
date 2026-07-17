@@ -1,19 +1,22 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-16 18:56 UTC_
+_Generated at 2026-07-17 18:53 UTC_
 
 ## Summary
 
-- Open findings: **59**
+- Open findings: **62**
 - Remediated (closed): **2**
-- Remediation rate: **2/61** (3%)
+- Remediation rate: **2/64** (3%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+20 opened, 0 remediated**
+- Last 7 days: **+22 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#88](https://github.com/thonda28/superset/issues/88) | `mcp 1.24.0` | CVE-2026-59950 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#87](https://github.com/thonda28/superset/issues/87) | `mcp 1.24.0` | CVE-2026-52869 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#86](https://github.com/thonda28/superset/issues/86) | `mcp 1.24.0` | CVE-2026-52870 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#85](https://github.com/thonda28/superset/issues/85) | `pillow 12.2.0` | GHSA-9hw9-ch79-4vh6 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#84](https://github.com/thonda28/superset/issues/84) | `pillow 12.2.0` | GHSA-pg7v-jwj7-p798 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#83](https://github.com/thonda28/superset/issues/83) | `pillow 12.2.0` | GHSA-6r8x-57c9-28j4 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
