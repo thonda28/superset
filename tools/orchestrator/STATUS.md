@@ -1,19 +1,32 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-20 19:25 UTC_
+_Generated at 2026-07-21 19:04 UTC_
 
 ## Summary
 
-- Open findings: **62**
+- Open findings: **75**
 - Remediated (closed): **2**
-- Remediation rate: **2/64** (3%)
+- Remediation rate: **2/77** (3%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+7 opened, 0 remediated**
+- Last 7 days: **+19 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#101](https://github.com/thonda28/superset/issues/101) | `pillow 12.2.0` | CVE-2026-59197 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#100](https://github.com/thonda28/superset/issues/100) | `pillow 12.2.0` | CVE-2026-59204 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#99](https://github.com/thonda28/superset/issues/99) | `pillow 12.2.0` | CVE-2026-55380 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#98](https://github.com/thonda28/superset/issues/98) | `pillow 12.2.0` | CVE-2026-59203 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#97](https://github.com/thonda28/superset/issues/97) | `pillow 12.2.0` | CVE-2026-59200 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#96](https://github.com/thonda28/superset/issues/96) | `pillow 12.2.0` | CVE-2026-59198 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#95](https://github.com/thonda28/superset/issues/95) | `pillow 12.2.0` | CVE-2026-59205 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#94](https://github.com/thonda28/superset/issues/94) | `pillow 12.2.0` | CVE-2026-54059 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#93](https://github.com/thonda28/superset/issues/93) | `pillow 12.2.0` | CVE-2026-59199 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#92](https://github.com/thonda28/superset/issues/92) | `pillow 12.2.0` | CVE-2026-54058 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#91](https://github.com/thonda28/superset/issues/91) | `pillow 12.2.0` | CVE-2026-54060 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#90](https://github.com/thonda28/superset/issues/90) | `pillow 12.2.0` | CVE-2026-55798 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#89](https://github.com/thonda28/superset/issues/89) | `pillow 12.2.0` | CVE-2026-55379 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#88](https://github.com/thonda28/superset/issues/88) | `mcp 1.24.0` | CVE-2026-59950 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#87](https://github.com/thonda28/superset/issues/87) | `mcp 1.24.0` | CVE-2026-52869 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#86](https://github.com/thonda28/superset/issues/86) | `mcp 1.24.0` | CVE-2026-52870 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
