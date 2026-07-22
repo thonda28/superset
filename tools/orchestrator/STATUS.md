@@ -1,19 +1,26 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-21 19:04 UTC_
+_Generated at 2026-07-22 18:58 UTC_
 
 ## Summary
 
-- Open findings: **75**
+- Open findings: **82**
 - Remediated (closed): **2**
-- Remediation rate: **2/77** (3%)
+- Remediation rate: **2/84** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+19 opened, 0 remediated**
+- Last 7 days: **+26 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#108](https://github.com/thonda28/superset/issues/108) | `setuptools 80.9.0` | CVE-2026-59890 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#107](https://github.com/thonda28/superset/issues/107) | `pyasn1 0.6.3` | CVE-2026-59886 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#106](https://github.com/thonda28/superset/issues/106) | `pyasn1 0.6.3` | CVE-2026-59885 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#105](https://github.com/thonda28/superset/issues/105) | `pyasn1 0.6.3` | GHSA-hm4w-wwcw-mr6r | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#104](https://github.com/thonda28/superset/issues/104) | `pyasn1 0.6.3` | GHSA-8ppf-4f7h-5ppj | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#103](https://github.com/thonda28/superset/issues/103) | `pyasn1 0.6.3` | GHSA-m4p7-r5rc-7g4j | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#102](https://github.com/thonda28/superset/issues/102) | `pillow 12.2.0` | GHSA-xj96-63gp-2gmr | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#101](https://github.com/thonda28/superset/issues/101) | `pillow 12.2.0` | CVE-2026-59197 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#100](https://github.com/thonda28/superset/issues/100) | `pillow 12.2.0` | CVE-2026-59204 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#99](https://github.com/thonda28/superset/issues/99) | `pillow 12.2.0` | CVE-2026-55380 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
