@@ -1,19 +1,20 @@
 # OSV Remediation Status
 
-_Generated at 2026-07-31 19:09 UTC_
+_Generated at 2026-08-01 18:55 UTC_
 
 ## Summary
 
-- Open findings: **89**
+- Open findings: **90**
 - Remediated (closed): **2**
-- Remediation rate: **2/91** (2%)
+- Remediation rate: **2/92** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+0 opened, 0 remediated**
+- Last 7 days: **+1 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#116](https://github.com/thonda28/superset/issues/116) | `pyasn1 0.6.3` | CVE-2026-59884 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#115](https://github.com/thonda28/superset/issues/115) | `mcp 1.24.0` | GHSA-vj7q-gjh5-988w | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#114](https://github.com/thonda28/superset/issues/114) | `mcp 1.24.0` | GHSA-jpw9-pfvf-9f58 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#113](https://github.com/thonda28/superset/issues/113) | `mcp 1.24.0` | GHSA-hvrp-rf83-w775 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
