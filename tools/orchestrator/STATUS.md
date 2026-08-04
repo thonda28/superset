@@ -1,19 +1,25 @@
 # OSV Remediation Status
 
-_Generated at 2026-08-03 19:19 UTC_
+_Generated at 2026-08-04 19:19 UTC_
 
 ## Summary
 
-- Open findings: **90**
+- Open findings: **96**
 - Remediated (closed): **2**
-- Remediation rate: **2/92** (2%)
+- Remediation rate: **2/98** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+1 opened, 0 remediated**
+- Last 7 days: **+7 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#122](https://github.com/thonda28/superset/issues/122) | `cryptography 46.0.7` | CVE-2026-69248 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#121](https://github.com/thonda28/superset/issues/121) | `cryptography 46.0.7` | CVE-2026-69249 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#120](https://github.com/thonda28/superset/issues/120) | `cryptography 46.0.7` | CVE-2026-69247 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#119](https://github.com/thonda28/superset/issues/119) | `cryptography 46.0.7` | GHSA-m2h6-j472-rp4c | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#118](https://github.com/thonda28/superset/issues/118) | `cryptography 46.0.7` | GHSA-jwv3-5hgf-82ww | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#117](https://github.com/thonda28/superset/issues/117) | `cryptography 46.0.7` | GHSA-g6cj-pr64-35w5 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#116](https://github.com/thonda28/superset/issues/116) | `pyasn1 0.6.3` | CVE-2026-59884 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#115](https://github.com/thonda28/superset/issues/115) | `mcp 1.24.0` | GHSA-vj7q-gjh5-988w | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#114](https://github.com/thonda28/superset/issues/114) | `mcp 1.24.0` | GHSA-jpw9-pfvf-9f58 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
