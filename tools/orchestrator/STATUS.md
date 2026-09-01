@@ -1,19 +1,20 @@
 # OSV Remediation Status
 
-_Generated at 2026-08-31 22:11 UTC_
+_Generated at 2026-09-01 20:19 UTC_
 
 ## Summary
 
-- Open findings: **98**
+- Open findings: **99**
 - Remediated (closed): **2**
-- Remediation rate: **2/100** (2%)
+- Remediation rate: **2/101** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+0 opened, 0 remediated**
+- Last 7 days: **+1 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#125](https://github.com/thonda28/superset/issues/125) | `pip 25.1.1` | CVE-2026-13346 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#124](https://github.com/thonda28/superset/issues/124) | `pip 25.1.1` | CVE-2026-13346 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#123](https://github.com/thonda28/superset/issues/123) | `msgpack 1.0.8` | GHSA-6v7p-g79w-8964 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#122](https://github.com/thonda28/superset/issues/122) | `cryptography 46.0.7` | CVE-2026-69248 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
