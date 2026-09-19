@@ -344,6 +344,8 @@ python-dateutil==2.9.0.post0
     #   shillelagh
 python-dotenv==1.2.2
     # via apache-superset (pyproject.toml)
+python-multipart==0.0.32
+    # via -r requirements/base.in
 pytz==2025.2
     # via
     #   croniter
