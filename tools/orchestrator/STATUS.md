@@ -1,19 +1,22 @@
 # OSV Remediation Status
 
-_Generated at 2026-09-28 22:45 UTC_
+_Generated at 2026-09-29 21:40 UTC_
 
 ## Summary
 
-- Open findings: **101**
+- Open findings: **104**
 - Remediated (closed): **2**
-- Remediation rate: **2/103** (2%)
+- Remediation rate: **2/106** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+0 opened, 0 remediated**
+- Last 7 days: **+3 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#130](https://github.com/thonda28/superset/issues/130) | `oauthlib 3.2.2` | CVE-2026-49265 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#129](https://github.com/thonda28/superset/issues/129) | `oauthlib 3.2.2` | CVE-2026-49264 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#128](https://github.com/thonda28/superset/issues/128) | `pyjwt 2.12.0` | CVE-2026-102274 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#127](https://github.com/thonda28/superset/issues/127) | `anyio 4.11.0` | CVE-2026-63374 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#126](https://github.com/thonda28/superset/issues/126) | `anyio 4.11.0` | CVE-2026-64847 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#125](https://github.com/thonda28/superset/issues/125) | `pip 25.1.1` | CVE-2026-13346 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
