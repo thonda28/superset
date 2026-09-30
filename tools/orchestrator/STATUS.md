@@ -1,19 +1,33 @@
 # OSV Remediation Status
 
-_Generated at 2026-09-29 21:40 UTC_
+_Generated at 2026-09-30 21:41 UTC_
 
 ## Summary
 
-- Open findings: **104**
+- Open findings: **118**
 - Remediated (closed): **2**
-- Remediation rate: **2/106** (2%)
+- Remediation rate: **2/120** (2%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+3 opened, 0 remediated**
+- Last 7 days: **+17 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#144](https://github.com/thonda28/superset/issues/144) | `virtualenv 20.36.1` | GHSA-x78j-v8h9-3j2q | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#143](https://github.com/thonda28/superset/issues/143) | `virtualenv 20.36.1` | GHSA-p58f-9548-mpm2 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#142](https://github.com/thonda28/superset/issues/142) | `virtualenv 20.36.1` | GHSA-9h9j-4vrj-gf7g | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#141](https://github.com/thonda28/superset/issues/141) | `virtualenv 20.36.1` | GHSA-94p9-xgh2-xp45 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#140](https://github.com/thonda28/superset/issues/140) | `urllib3 2.7.0` | CVE-2026-97689 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#139](https://github.com/thonda28/superset/issues/139) | `urllib3 2.7.0` | CVE-2026-97688 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#138](https://github.com/thonda28/superset/issues/138) | `urllib3 2.7.0` | CVE-2026-97687 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#137](https://github.com/thonda28/superset/issues/137) | `pyjwt 2.12.0` | CVE-2026-102271 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#136](https://github.com/thonda28/superset/issues/136) | `pyjwt 2.12.0` | CVE-2026-102270 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#135](https://github.com/thonda28/superset/issues/135) | `pyjwt 2.12.0` | CVE-2026-102269 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#134](https://github.com/thonda28/superset/issues/134) | `pyjwt 2.12.0` | CVE-2026-102268 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#133](https://github.com/thonda28/superset/issues/133) | `pyjwt 2.12.0` | CVE-2026-102267 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#132](https://github.com/thonda28/superset/issues/132) | `pyjwt 2.12.0` | CVE-2026-101918 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#131](https://github.com/thonda28/superset/issues/131) | `pyjwt 2.12.0` | CVE-2026-101917 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#130](https://github.com/thonda28/superset/issues/130) | `oauthlib 3.2.2` | CVE-2026-49265 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#129](https://github.com/thonda28/superset/issues/129) | `oauthlib 3.2.2` | CVE-2026-49264 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#128](https://github.com/thonda28/superset/issues/128) | `pyjwt 2.12.0` | CVE-2026-102274 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
