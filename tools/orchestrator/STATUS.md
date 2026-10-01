@@ -1,19 +1,40 @@
 # OSV Remediation Status
 
-_Generated at 2026-09-30 21:41 UTC_
+_Generated at 2026-10-01 22:10 UTC_
 
 ## Summary
 
-- Open findings: **118**
+- Open findings: **139**
 - Remediated (closed): **2**
-- Remediation rate: **2/120** (2%)
+- Remediation rate: **2/141** (1%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+17 opened, 0 remediated**
+- Last 7 days: **+38 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#165](https://github.com/thonda28/superset/issues/165) | `virtualenv 20.36.1` | CVE-2026-102937 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#164](https://github.com/thonda28/superset/issues/164) | `virtualenv 20.36.1` | CVE-2026-102925 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#163](https://github.com/thonda28/superset/issues/163) | `virtualenv 20.36.1` | CVE-2026-102938 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#162](https://github.com/thonda28/superset/issues/162) | `virtualenv 20.36.1` | CVE-2026-102930 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#161](https://github.com/thonda28/superset/issues/161) | `oauthlib 3.2.2` | GHSA-xpv3-w29h-x7cv | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#160](https://github.com/thonda28/superset/issues/160) | `oauthlib 3.2.2` | GHSA-hj66-6f7g-4r5v | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#159](https://github.com/thonda28/superset/issues/159) | `anyio 4.11.0` | GHSA-82r6-8w77-94w6 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#158](https://github.com/thonda28/superset/issues/158) | `anyio 4.11.0` | GHSA-5p39-cfhj-2xmp | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
+| [#157](https://github.com/thonda28/superset/issues/157) | `urllib3 2.7.0` | GHSA-vxq7-64xx-v4gw | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#156](https://github.com/thonda28/superset/issues/156) | `urllib3 2.7.0` | GHSA-gh4c-6fx4-qh6g | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#155](https://github.com/thonda28/superset/issues/155) | `urllib3 2.7.0` | GHSA-8988-9cw3-xx77 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#154](https://github.com/thonda28/superset/issues/154) | `pyjwt 2.12.0` | CVE-2026-103001 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#153](https://github.com/thonda28/superset/issues/153) | `pyjwt 2.12.0` | GHSA-w6j9-cwv2-h6wq | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#152](https://github.com/thonda28/superset/issues/152) | `pyjwt 2.12.0` | GHSA-p4g4-x82p-q773 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#151](https://github.com/thonda28/superset/issues/151) | `pyjwt 2.12.0` | GHSA-jwrc-g2q2-pq5p | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#150](https://github.com/thonda28/superset/issues/150) | `pyjwt 2.12.0` | GHSA-hxm8-2xgr-2p9m | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#149](https://github.com/thonda28/superset/issues/149) | `pyjwt 2.12.0` | GHSA-gvp8-978c-rx2q | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#148](https://github.com/thonda28/superset/issues/148) | `pyjwt 2.12.0` | GHSA-ffc3-869f-jxw9 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#147](https://github.com/thonda28/superset/issues/147) | `pyjwt 2.12.0` | GHSA-9v7f-9g4p-ffgj | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#146](https://github.com/thonda28/superset/issues/146) | `pyjwt 2.12.0` | GHSA-42vr-xj54-vc7v | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#145](https://github.com/thonda28/superset/issues/145) | `pyjwt 2.12.0` | GHSA-2gx3-rcp4-g85q | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#144](https://github.com/thonda28/superset/issues/144) | `virtualenv 20.36.1` | GHSA-x78j-v8h9-3j2q | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#143](https://github.com/thonda28/superset/issues/143) | `virtualenv 20.36.1` | GHSA-p58f-9548-mpm2 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#142](https://github.com/thonda28/superset/issues/142) | `virtualenv 20.36.1` | GHSA-9h9j-4vrj-gf7g | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
