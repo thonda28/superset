@@ -1,19 +1,20 @@
 # OSV Remediation Status
 
-_Generated at 2026-10-02 21:35 UTC_
+_Generated at 2026-10-03 20:22 UTC_
 
 ## Summary
 
-- Open findings: **139**
+- Open findings: **140**
 - Remediated (closed): **2**
-- Remediation rate: **2/141** (1%)
+- Remediation rate: **2/142** (1%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+38 opened, 0 remediated**
+- Last 7 days: **+39 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#166](https://github.com/thonda28/superset/issues/166) | `geopy 2.4.1` | CVE-2026-77387 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#165](https://github.com/thonda28/superset/issues/165) | `virtualenv 20.36.1` | CVE-2026-102937 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#164](https://github.com/thonda28/superset/issues/164) | `virtualenv 20.36.1` | CVE-2026-102925 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#163](https://github.com/thonda28/superset/issues/163) | `virtualenv 20.36.1` | CVE-2026-102938 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
