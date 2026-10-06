@@ -1,12 +1,12 @@
 # OSV Remediation Status
 
-_Generated at 2026-10-05 23:29 UTC_
+_Generated at 2026-10-06 22:02 UTC_
 
 ## Summary
 
-- Open findings: **140**
+- Open findings: **143**
 - Remediated (closed): **2**
-- Remediation rate: **2/142** (1%)
+- Remediation rate: **2/145** (1%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
 - Last 7 days: **+39 opened, 0 remediated**
 
@@ -14,6 +14,9 @@ _Generated at 2026-10-05 23:29 UTC_
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#169](https://github.com/thonda28/superset/issues/169) | `werkzeug 3.1.6` | CVE-2026-102598 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#168](https://github.com/thonda28/superset/issues/168) | `pyjwt 2.12.0` | CVE-2026-102275 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
+| [#167](https://github.com/thonda28/superset/issues/167) | `mako 1.3.12` | CVE-2026-102991 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#166](https://github.com/thonda28/superset/issues/166) | `geopy 2.4.1` | CVE-2026-77387 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#165](https://github.com/thonda28/superset/issues/165) | `virtualenv 20.36.1` | CVE-2026-102937 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
 | [#164](https://github.com/thonda28/superset/issues/164) | `virtualenv 20.36.1` | CVE-2026-102925 | `/home/runner/work/superset/superset/requirements/development.txt` | — | — |
