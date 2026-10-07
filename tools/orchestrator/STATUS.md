@@ -1,19 +1,20 @@
 # OSV Remediation Status
 
-_Generated at 2026-10-06 22:02 UTC_
+_Generated at 2026-10-07 22:27 UTC_
 
 ## Summary
 
-- Open findings: **143**
+- Open findings: **144**
 - Remediated (closed): **2**
-- Remediation rate: **2/145** (1%)
+- Remediation rate: **2/146** (1%)
 - Median time-to-remediation: **4h 12m** _(n=2)_
-- Last 7 days: **+39 opened, 0 remediated**
+- Last 7 days: **+26 opened, 0 remediated**
 
 ## Open Findings
 
 | Issue | Package | Advisory | Source manifest | Devin session | PR |
 |---|---|---|---|---|---|
+| [#170](https://github.com/thonda28/superset/issues/170) | `pyjwt 2.12.0` | GHSA-x33g-cr3x-6449 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#169](https://github.com/thonda28/superset/issues/169) | `werkzeug 3.1.6` | CVE-2026-102598 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#168](https://github.com/thonda28/superset/issues/168) | `pyjwt 2.12.0` | CVE-2026-102275 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
 | [#167](https://github.com/thonda28/superset/issues/167) | `mako 1.3.12` | CVE-2026-102991 | `/home/runner/work/superset/superset/requirements/base.txt` | — | — |
